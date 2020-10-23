@@ -1,8 +1,8 @@
 # national-bank
 
 
-##Primeiro use npm ou yarn script para montar o docker com mongoDB (Necessário ter o docker-compose instalado.
-##Depois é só dar yarn dev e A API Irá funcionar.
+## Primeiro use npm ou yarn script para montar o docker com mongoDB (Necessário ter o docker-compose instalado.
+## Depois é só dar yarn dev e A API Irá funcionar.
 
 Já existem duas contas no banco criadas.
 

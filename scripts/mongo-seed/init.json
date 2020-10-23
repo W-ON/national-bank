@@ -1,0 +1,14 @@
+[
+  {
+    "_id": { "$oid": "5f9265fd447727532913d5bd" },
+    "firstName": "Willian",
+    "lastName": "Novaes",
+    "balance": 1000.91
+  },
+  {
+    "_id": { "$oid": "5f926688447727532913d5be" },
+    "firstName": "Darth",
+    "lastName": "Vader",
+    "balance": 99999.999
+  }
+]

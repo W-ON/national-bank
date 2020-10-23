@@ -1,0 +1,28 @@
+{
+  "name": "national-bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "script" : "cd scripts && docker-compose up",
+    "dev": "npx nodemon --exec babel-node src/index.js -e js,gql",
+    "test": "mocha src/graphql/modules/accounts/accounts.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "chai": "^4.2.0",
+    "easygraphql-tester": "^5.1.6",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "graphql": "^15.3.0",
+    "merge-graphql-schemas": "^1.7.8",
+    "mongoose": "^5.10.9"
+  }
+}

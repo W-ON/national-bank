@@ -1,0 +1,30 @@
+type Account {
+  _id: ID!
+  firstName: String!
+  lastName: String!
+  balance: Float!
+}
+
+type Query {
+  accounts: [Account!]!
+  account(id: ID!): Account!
+  balance(id: ID!): OnlyBalance!
+}
+
+input AccountInput {
+  firstName: String!
+  lastName: String!
+  balance: Float
+}
+
+type OnlyBalance {
+  balance: Float
+}
+
+type Mutation {
+  createAccount(input: AccountInput!): Account!
+  updateAccount(id: ID, data: AccountInput!): Account!
+  deleteAccount(id: ID!): Boolean
+  withdraw(accountId: ID!, quantity: Float!): Account!
+  deposit(accountId: ID!, quantity: Float!): Account!
+}

@@ -1,7 +1,6 @@
 type Account {
   _id: ID!
-  firstName: String!
-  lastName: String!
+  name: String!
   balance: Float!
 }
 
@@ -12,8 +11,7 @@ type Query {
 }
 
 input AccountInput {
-  firstName: String!
-  lastName: String!
+  name: String!
   balance: Float
 }
 
@@ -25,6 +23,6 @@ type Mutation {
   createAccount(input: AccountInput!): Account!
   updateAccount(id: ID, data: AccountInput!): Account!
   deleteAccount(id: ID!): Boolean
-  withdraw(accountId: ID!, quantity: Float!): Account!
-  deposit(accountId: ID!, quantity: Float!): Account!
+  withdraw(accountId: ID!, amount: Float!): Account!
+  deposit(accountId: ID!, amount: Float!): Account!
 }

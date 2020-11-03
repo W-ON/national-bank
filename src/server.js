@@ -1,9 +1,9 @@
-import { AuthenticationError } from 'apollo-server-errors';
 import { ApolloServer } from 'apollo-server'
-import connectMongoose from './clients/mongoose'
+import mongo from './clients/mongoose'
+
 
 function server({ typeDefs, resolvers}) {
-  connectMongoose()
+  mongo.connectMongoose()
 
   const apolloServer = new ApolloServer({ typeDefs, resolvers,
     formatError: (err) => ({ message: err.message, status: err.status })
